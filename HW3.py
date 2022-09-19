@@ -123,8 +123,18 @@
 # print(int_func(word))
 
 #7
+# def int_func(text_upp):
+#     text_upp = text_upp.title()
+#     return(text_upp)
+# text = input('enter text ')
+# print(int_func(text))
+
+#7.1
 def int_func(text_upp):
-    text_upp = text_upp.title()
+    text_upp = text_upp.split()
+    for i in range(0, len(text_upp)):
+        text_upp[i] = text_upp[i].capitalize()
+        print(text_upp[i])
     return(text_upp)
 text = input('enter text ')
 print(int_func(text))
